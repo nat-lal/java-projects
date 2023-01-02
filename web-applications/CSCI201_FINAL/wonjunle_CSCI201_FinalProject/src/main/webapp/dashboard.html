@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Trojan Scheduler</title>
+    <meta name="description" content="Trojan Scheduler helps you build the perfect schedule for any semester at USC">
+</head>
+
+<body>
+    <div class="dashboard-page">
+        <form class="form" method="POST" action="ResultServlet">
+            <h1 id="logo"> Trojan Scheduler </h1> <br>
+            <table width="100%" id="schedule" bordercolor="#cccccc" cellpadding="5" cellspacing="5">
+                <tr>
+                    <th>
+                        <label for="ge-type">GE type:</label>
+                        <select id="ge-type" name="ge-type">
+                            <option value="A">GE-A</option>
+                            <option value="B">GE-B</option>
+                            <option value="C">GE-C</option>
+                            <option value="D">GE-D</option>
+                            <option value="E">GE-E</option>
+                            <option value="F">GE-F</option>
+                            <option value="G">GE-G</option>
+                            <option value="H">GE-H</option>
+                        </select>
+                    </th>
+
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+
+                <tr>
+                    <td>8:00-9:00am</td>
+                    <td><input type="checkbox" name="M89am" value="8"/></td>
+                    <td><input type="checkbox" name="T89am" value="8"/> </td>
+                    <td><input type="checkbox" name="W89am" value="8"/> </td>
+                    <td><input type="checkbox" name="TH89am" value="8"/> </td>
+                    <td><input type="checkbox" name="F89am" value="8"/> </td>
+                </tr>
+                <tr>
+                    <td>9:00-10:00am</td>
+                    <td><input type="checkbox" name="M910am" value="9"/></td>
+                    <td><input type="checkbox" name="T910am" value="9"/> </td>
+                    <td><input type="checkbox" name="W910am" value="9"/> </td>
+                    <td><input type="checkbox" name="TH910am" value="9"/> </td>
+                    <td><input type="checkbox" name="F910am" value="9"/> </td>
+                </tr>
+                <tr>
+                    <td>10:00-11:00am</td>
+                    <td><input type="checkbox" name="M1011am" value="10"/></td>
+                    <td><input type="checkbox" name="T1011am" value="10"/> </td>
+                    <td><input type="checkbox" name="W1011am" value="10"/> </td>
+                    <td><input type="checkbox" name="TH1011am" value="10"/> </td>
+                    <td><input type="checkbox" name="F1011am" value="10"/> </td>
+                </tr>
+                <tr>
+                    <td>11:00-12:00pm</td>
+                    <td><input type="checkbox" name="M1112pm" value="11"/></td>
+                    <td><input type="checkbox" name="T1112pm" value="11"/> </td>
+                    <td><input type="checkbox" name="W1112pm" value="11"/> </td>
+                    <td><input type="checkbox" name="TH1112pm" value="11"/> </td>
+                    <td><input type="checkbox" name="F1112pm" value="11"/> </td>
+                </tr>
+                <tr>
+                    <td>12:00-1:00pm</td>
+                    <td><input type="checkbox" name="M121pm" value="12"/></td>
+                    <td><input type="checkbox" name="T121pm" value="12"/> </td>
+                    <td><input type="checkbox" name="W121pm" value="12"/> </td>
+                    <td><input type="checkbox" name="TH121pm" value="12"/> </td>
+                    <td><input type="checkbox" name="F121pm" value="12"/> </td>
+                </tr>
+                <tr>
+                    <td>1:00-2:00pm</td>
+                    <td><input type="checkbox" name="M12pm" value="13"/></td>
+                    <td><input type="checkbox" name="T12pm" value="13" /> </td>
+                    <td><input type="checkbox" name="W12pm" value="13" /> </td>
+                    <td><input type="checkbox" name="TH12pm" value="13" /> </td>
+                    <td><input type="checkbox" name="F12pm" value="13" /> </td>
+                </tr>
+                <tr>
+                    <td>2:00-3:00pm</td>
+                    <td><input type="checkbox" name="M23pm"  value="14"/></td>
+                    <td><input type="checkbox" name="T23pm" value="14" /> </td>
+                    <td><input type="checkbox" name="W23pm" value="14" /> </td>
+                    <td><input type="checkbox" name="TH23pm" value="14" /> </td>
+                    <td><input type="checkbox" name="F23pm" value="14" /> </td>
+                </tr>
+                <tr>
+                    <td>3:00-4:00pm</td>
+                    <td><input type="checkbox" name="M34pm" value="15" /></td>
+                    <td><input type="checkbox" name="T34pm" value="15"/> </td>
+                    <td><input type="checkbox" name="W34pm" value="15"/> </td>
+                    <td><input type="checkbox" name="TH34pm" value="15"/> </td>
+                    <td><input type="checkbox" name="F34pm" value="15"/> </td>
+                </tr>
+                <tr>
+                    <td>4:00-5:00pm</td>
+                    <td><input type="checkbox" name="M45pm" value="16"/></td>
+                    <td><input type="checkbox" name="T45pm" value="16"/> </td>
+                    <td><input type="checkbox" name="W45pm" value="16"/> </td>
+                    <td><input type="checkbox" name="TH45pm" value="16"/> </td>
+                    <td><input type="checkbox" name="F45pm" value="16"/> </td>
+                </tr>
+                <tr>
+                    <td>5:00-6:00pm</td>
+                    <td><input type="checkbox" name="M56pm" value="17"/></td>
+                    <td><input type="checkbox" name="T56pm" value="17"/> </td>
+                    <td><input type="checkbox" name="W56pm" value="17"/> </td>
+                    <td><input type="checkbox" name="TH56pm" value="17"/> </td>
+                    <td><input type="checkbox" name="F56pm" value="17"/> </td>
+                </tr>
+                <tr>
+                    <td>6:00-7:00pm</td>
+                    <td><input type="checkbox" name="M67pm" value="18"/></td>
+                    <td><input type="checkbox" name="T67pm" value="18"/> </td>
+                    <td><input type="checkbox" name="W67pm" value="18"/> </td>
+                    <td><input type="checkbox" name="TH67pm" value="18"/> </td>
+                    <td><input type="checkbox" name="F67pm" value="18"/> </td>
+                </tr>
+                <tr>
+                    <td>7:00-8:00pm</td>
+                    <td><input type="checkbox" name="M78pm" value="19"/></td>
+                    <td><input type="checkbox" name="T78pm" value="19"/> </td>
+                    <td><input type="checkbox" name="W78pm" value="19"/> </td>
+                    <td><input type="checkbox" name="TH78pm" value="19"/> </td>
+                    <td><input type="checkbox" name="F78pm" value="19"/> </td>
+                </tr>
+                <tr>
+                    <td>8:00-9:00pm</td>
+                    <td><input type="checkbox" name="M89pm" value="20"/></td>
+                    <td><input type="checkbox" name="T89pm" value="20"/> </td>
+                    <td><input type="checkbox" name="W89pm" value="20"/> </td>
+                    <td><input type="checkbox" name="TH89pm" value="20"/> </td>
+                    <td><input type="checkbox" name="F89pm" value="20"/> </td>
+                </tr>
+                <tr>
+                    <td>9:00-10:00pm</td>
+                    <td><input type="checkbox" name="M910pm" value="21"/></td>
+                    <td><input type="checkbox" name="T910pm" value="21"/> </td>
+                    <td><input type="checkbox" name="W910pm" value="21"/> </td>
+                    <td><input type="checkbox" name="TH910pm" value="21"/> </td>
+                    <td><input type="checkbox" name="F910pm" value="21"/> </td>
+                </tr>
+            </table>
+            <br>
+            <input id="submit" type="submit" value="Submit" style="background-color: #c0392b;">
+        </form>
+    </div>
+</body>
+
+</html>

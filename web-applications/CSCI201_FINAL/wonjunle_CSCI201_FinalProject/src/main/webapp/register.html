@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Trojan Scheduler</title>
+    <meta name="description" content="Trojan Scheduler helps you build the perfect schedule for any semester at USC">
+</head>
+
+<body>
+    <div class="login-page">
+        <div class="form">
+            <img src="calendar.png" alt="calendar logo" style="width: 50px; height: 50px;">
+            <h1 id="logo"> Trojan Scheduler </h1>
+            <form class="registration-form" method="POST" action="RegisterServlet">
+            <input type="email" name="username" placeholder="email" pattern="[a-z0-9]+@usc.edu" required/>
+            <input type="password" name="password" placeholder="password" required/>
+            <input id="submit" type="submit" value="register">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
